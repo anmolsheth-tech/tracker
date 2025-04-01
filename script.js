@@ -17,10 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // User storage
   let users = JSON.parse(localStorage.getItem("users")) || [];
 
-  // Signup handler
   document.getElementById("signupForm").addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "#login";
   });
 
-  // Login handler
   document.getElementById("loginForm").addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -54,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Tracker handler
   document.getElementById("trackerForm").addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -66,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
       notes: formData.get(4),
     };
 
-    // Save to localStorage
     let entries = JSON.parse(localStorage.getItem("entries")) || [];
     entries.push(entry);
     localStorage.setItem("entries", JSON.stringify(entries));
@@ -76,39 +71,33 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// In script.js
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const targetId = link.getAttribute("href").substring(1);
 
-    // Hide all sections
     document.querySelectorAll("section").forEach((section) => {
       section.style.display = "none";
     });
 
-    // Show target section
     document.getElementById(targetId).style.display = "block";
   });
 });
 
-// Function to navigate to signup page
 function navigateToSignup() {
     const sections = document.querySelectorAll('section');
     
     sections.forEach((section) => {
-        section.classList.remove('active'); // Hide all sections
-        if (section.id === 'signup') section.classList.add('active'); // Show signup section
+        section.classList.remove('active'); 
+        if (section.id === 'signup') section.classList.add('active'); 
     });
 }
 
-// Function to navigate to signup section
-// Function to navigate to signup section
 document.getElementById("getStartedButton").addEventListener("click", () => {
     const sections = document.querySelectorAll("section");
 
     sections.forEach((section) => {
-        section.classList.remove("active"); // Hide all sections
-        if (section.id === "signup") section.classList.add("active"); // Show signup section
+        section.classList.remove("active"); 
+        if (section.id === "signup") section.classList.add("active"); 
     });
 });

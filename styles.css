@@ -109,7 +109,6 @@ button:hover {
     }
 }
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -147,7 +146,6 @@ nav .logo {
     font-size: 1.5rem;
 }
 
-/* Content Section */
 .content-section {
     padding: 2rem;
 }
@@ -161,7 +159,6 @@ nav .logo {
     line-height: 1.6;
 }
 
-/* Call-to-Action Section */
 .cta-section {
     background-color: #e0f7fa;
     text-align: center;
@@ -181,14 +178,12 @@ nav .logo {
     background-color: #005f87;
 }
 
-/* Footer */
 footer {
     background-color: #004c6d;
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
-/* Add to styles.css */
 .content-section {
     display: none;
     padding: 80px 20px 20px;
@@ -202,7 +197,6 @@ footer {
     display: block !important;
 }
 
-/* Add to styles.css */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -235,25 +229,21 @@ footer {
     }
 }
 
-/* Hide all sections by default */
 section {
     display: none;
 }
 
-/* Show only the active section */
 section.active {
     display: block;
 }
 
-/* Hero Section */
-/* Hero Section */
 .hero-section {
-    background-color: #0077b6; /* Aqua blue background */
+    background-color: #0077b6; 
     color: white;
     text-align: center;
-    padding: 100px 20px; /* Space around content */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Center content vertically and horizontally */
+    padding: 100px 20px; 
+    height: 100vh; 
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -280,30 +270,25 @@ section.active {
 }
 
 .hero-content button:hover {
-    background-color: #005f87; /* Darker blue on hover */
+    background-color: #005f87;
 }
 
-/* Ensure button width is not stretched */
 .hero-content button {
-    width: auto; /* Prevent full-width stretching */
+    width: auto; 
 }
 
-/* Hide all sections by default */
 section {
     display: none;
 }
 
-/* Show only the active section */
 section.active {
     display: block;
 }
 
-/* Hide all sections by default */
 section {
     display: none;
 }
 
-/* Show only the active section */
 section.active {
     display: block;
 }
